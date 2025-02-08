@@ -7,28 +7,30 @@ homepage: https://github.com/gocal/gsheet_to_arb
 publish_to: 'none'
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: '>=3.6.0 <4.0.0'
 
 dependencies:
   args: ">=2.0.0 <3.0.0"
-  dart_style: ">=2.0.1 <3.0.0"
-  intl: ">=0.18.0 <0.19.0"
-  intl_generator: ^0.4.1
+  dart_style: ">=2.0.1 <3.6.0"
+  intl: ">=0.19.0 <0.20.0"
+  intl_generator:
+    git:
+      url: https://github.com/anycode/intl_generator.git
   path: ">=1.8.0 <2.0.0"
   googleapis_auth: ^1.1.0
-  googleapis: ^11.1.0
+  googleapis: ^13.2.0
   code_builder: ">=4.0.0 <5.0.0"
-  json_annotation: "^4.4.0"
+  json_annotation: any
   file_utils: ">=1.0.0 <1.1.0"
   logging: "^1.0.1"
   recase: "^4.0.0"
   quiver: "^3.0.1"
   yaml: ">=3.1.0 <3.2.0"
-  petitparser: ">=5.0.0 <6.0.0" 
+  petitparser: ">=5.0.0 <7.0.0" 
 
 dev_dependencies:
-  analyzer: ">=4.7.0 <6.0.0"
+  analyzer: any
   test: any
-  build_runner: ^2.0.0
-  json_serializable: ^6.1.4
-  pedantic: ^1.11.0
+  build_runner: any
+  json_serializable: any
+  pedantic: any
